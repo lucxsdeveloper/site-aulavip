@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon_png.ico">
+    <title> Aula VIP </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro para alunos</h1>
+        <div class="cadaluno">
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="nome" id="nome" name="nome">
+            </p>
+            <p>
+                <label for="endereço">Endereço:</label>
+                <input type="endereço" id="endereço" name="endereço">
+            </p>
+            <p>
+                <label for="complemento">Complemento:</label>
+                <input type="complemento" id="complemento" name="complemento">
+            </p>
+            <p>
+                Bairro:<input list="browsers" name="">
+                    <datalist id="browsers">
+                        <option value="Santa Teresa">
+                        <option value="Realengo">
+                        <option value="Botafogo">
+                        <option value="Bangu">
+                        <option value="Centro">
+                        <option value="Leblon">
+                    </datalist>
+            </p>
+                Cidade:<input list="browsers" name="">
+                <datalist id="browsers">
+                    <option value="Rio de Janeiro">
+                    <option value="Guapimirim">
+                    <option value="Teresópolis">
+                    <option value="Angra dos Reis">
+                    <option value="Resende">
+                    <option value="Guaratiba">
+                </datalist>
+            <p>
+                <label for="estados">Estado:</label>
+                <select id="estados" name="estados">
+                  <option value="rj">RJ</option>
+                  <option value="sp">SP</option>
+                  <option value="mg">MG</option>
+                  <option value="sc">SC</option>
+                  <option value="am">AM</option>
+                  <option value="rr">RR</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="CEP">CEP:</label>
+                <input type="CEP" id="CEP" name="CEP">
+            </p>
+
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="telefone" id="telefone" name="telefone">
+            </p> 
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            <p> 
+
+            <p><strong>Disciplinas que você quer aprender:</strong></p>
+        
+            <form method="post" action="cadastroaluno.php">
+            <p>
+               <input type="checkbox" name="disciplinas1" id="disciplinas1" value="Matemática">
+               <label for="disciplinas1">Matemática</label> 
+               <input type="checkbox" name="disciplinas2" id="disciplinas2" value="Física">
+               <label for="disciplinas1">Física</label> 
+               <input type="checkbox" name="disciplinas3" id="disciplinas3" value="Química">
+               <label for="disciplinas3">Química</label> 
+               <input type="checkbox" name="disciplinas4" id="disciplinas4" value="Biologia">
+               <label for="disciplinas4">Biologia</label>
+               <input type="checkbox" name="disciplinas5" id="disciplinas5" value="LP">
+               <label for="disciplinas5">Língua Portuguesa</label> 
+               <input type="checkbox" name="disciplinas6" id="disciplinas6" value="Redação">
+               <label for="disciplinas6">Redação</label> 
+               <input type="checkbox" name="disciplinas7" id="disciplinas7" value="Geografia">
+               <label for="disciplinas7">Geografia</label> 
+               <input type="checkbox" name="disciplinas8" id="disciplinas8" value="História">
+               <label for="disciplinas1">História</label>
+               <input type="checkbox" name="disciplinas9" id="disciplinas9" value="Desenho Geométrico">
+               <label for="disciplinas9">Desenho Geométrico</label> 
+            </p>
+
+            <p>
+                Valor máximo da hora-aula que você quer pagar: <br>
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+            </p>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <br><br>
+    </main>
+    <footer>
+        <p>E-mail: aulavip@gmail.com </p>
+    </footer>
+</body>
+</html>
